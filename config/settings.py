@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': env.dj_db_url('DATABASE_URL')      
     }
-}
+
 
 
 # Password validation
