@@ -1,5 +1,5 @@
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import (CreateView, UpdateView, DeleteView)
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Article
 from django.urls import reverse_lazy
@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 
 class ArticleListView(ListView):
     model = Article
-    template_name = "home.html"
+    template_name = "article_list.html"
 
 
 class ArticleDetailView(DetailView):

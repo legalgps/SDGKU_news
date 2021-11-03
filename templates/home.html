@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-    <h2>Welcome to my news app!</h2>
-    Click <a href="{% url 'login' %}">here</a> to log in.
+    <h2>Welcome to the Digital Wayfarer!</h2>
+    <img src="{% static 'images/library-homepage.png' %}" alt="home page">
 {% endblock content %}
